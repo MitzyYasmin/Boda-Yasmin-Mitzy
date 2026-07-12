@@ -1,0 +1,12 @@
+INVITACIÓN DEFINITIVA V13 — MITZY & YASMIN
+
+Abre index.html y busca:
+
+/* ========= PERSONALIZAR ESTA INVITACIÓN ========= */
+
+const invitado = "Familia Hernández";
+const codigo = "INV-018";
+
+Cambia únicamente esos dos valores.
+
+Esta versión no muestra pases ni número de personas.

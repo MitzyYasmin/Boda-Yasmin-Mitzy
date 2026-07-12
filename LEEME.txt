@@ -1,0 +1,4 @@
+VERSIÓN 13 DEFINITIVA
+
+La invitación conserva el diseño final y elimina por completo los pases.
+Solo se personalizan el nombre del invitado y el código.
