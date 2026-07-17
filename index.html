@@ -61,8 +61,9 @@ body.noche .location p, body.noche .location h3, body.noche .location-title {
 .intro-box,.hero-content{
   position:relative;
   z-index:3;
-  padding:38px 32px;
+  padding:32px;
   max-width:760px;
+  transform:translateY(-12vh);
 }
 .intro-box::before,.hero-content::before{
   content:"";
@@ -172,12 +173,7 @@ body.noche body.noche .reveal{opacity:0;transform:translateY(26px);transition:.9
     radial-gradient(circle at 68% 66%,#c98bd8 0 12%,transparent 13%),
     #f7e5ea;
 }
-.palette-labels{
-  margin-top:-14px;
-  margin-bottom:30px;
-  font-family:'Cormorant Garamond',serif;
-  font-size:22px;
-}
+
 .confirm-rsvp{
   min-height:100vh;
   background:
@@ -253,6 +249,63 @@ body.noche body.noche .reveal{opacity:0;transform:translateY(26px);transition:.9
 }
 body.noche .best-gift p{
   color:#fffaf6!important;
+}
+
+
+.palette-large{
+  gap:18px;
+  margin-top:26px;
+}
+.palette-large .dot{
+  width:54px;
+  height:54px;
+  border:2px solid rgba(255,255,255,.75);
+  box-shadow:0 8px 22px rgba(0,0,0,.16);
+}
+@media(max-width:760px){
+  .intro-box,.hero-content{transform:translateY(-8vh)}
+}
+
+
+
+
+
+
+@media(max-width:760px){
+  
+}
+
+
+.palette-labels{
+  margin:10px auto 0;
+  font-size:.88rem;
+  line-height:1.4;
+  text-align:center;
+  letter-spacing:.01em;
+}
+
+.color-note{
+  max-width:560px;
+  margin:30px auto 0;
+  padding:0 20px;
+  font-size:.58rem;
+  line-height:1.45;
+  text-align:center;
+  font-style:italic;
+  font-weight:300;
+  opacity:.62;
+}
+
+@media(max-width:760px){
+  .palette-labels{
+    font-size:.76rem;
+    line-height:1.45;
+  }
+  .color-note{
+    margin-top:26px;
+    font-size:.54rem;
+    line-height:1.45;
+  }
 }
 
 </style>
@@ -358,29 +411,25 @@ De una u otra manera, has sido parte importante de esta historia. Por eso, con e
     <h2>Código de</h2><div class="script">vestimenta</div>
     <p>Vestido largo y elegante<br>Traje de lino o ligero</p>
 
-    <h3>Vestimenta permitida</h3>
-    <div class="palette">
-      <span class="dot" style="background:#d94f8a"></span>
-      <span class="dot" style="background:#4e9b64"></span>
-      <span class="dot" style="background:#3b73c4"></span>
-      <span class="dot" style="background:#39c7cf"></span>
-      <span class="dot" style="background:#9a66cc"></span>
-      <span class="dot" style="background:#ff7f6a"></span>
-      <span class="dot floral-dot" title="Florales"></span>
-    </div>
-    <p class="palette-labels">Rosa, verde, azul, aqua, lila, coral y florales.</p>
-
     <h3>Colores a evitar</h3>
-    <div class="palette avoid">
-      <span class="dot" style="background:#ffffff"></span>
-      <span class="dot" style="background:#e8dcc9"></span>
-      <span class="dot" style="background:#fff3a8"></span>
-      <span class="dot" style="background:#b96c4b"></span>
-      <span class="dot" style="background:#ff8a3d"></span>
-      <span class="dot" style="background:#f4eee6"></span>
-      <span class="dot" style="background:#eee8df"></span>
+
+    <div class="palette avoid palette-large">
+      <span class="dot" style="background:#ffffff" title="Blanco"></span>
+      <span class="dot" style="background:#e8dcc9" title="Beige"></span>
+      <span class="dot" style="background:#fff3a8" title="Amarillo"></span>
+      <span class="dot" style="background:#d96b2b" title="Terracota"></span>
+      <span class="dot" style="background:#ff8a3d" title="Naranja"></span>
+      <span class="dot" style="background:#f4eee6" title="Perla"></span>
+      <span class="dot" style="background:#eee8df" title="Colores claros"></span>
     </div>
-    <p>Blanco, beige, amarillo claro, terracota, naranja, perla o colores claros.</p>
+
+    <p class="palette-labels">
+      Blanco · Beige · Amarillo · Terracota · Naranja · Perla · Colores claros
+    </p>
+
+    <p class="color-note">
+      Con mucho cariño, hemos reservado la paleta de colores indicada para las novias, como un detalle especial de este día que tanto hemos soñado. Les agradecemos de corazón su comprensión y el cariño con el que nos acompañarán en este momento tan único.
+    </p>
   </div>
 </section>
 
